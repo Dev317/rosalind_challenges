@@ -3,17 +3,16 @@ def test_case(input):
     actual = main(input)
     assert expected == actual
 
-
-def main(dna_string):
+def main(input):
     result = ""
-    for i in range(len(dna_string)):
-        if dna_string[i] == "T":
+    for i in range(len(input)):
+        if input[i] == "T":
             result += "U"
         else:
-            result += dna_string[i]
-    print(result)
+            result += input[i]
+    return result
 
 if __name__ == "__main__":
     test_case("GATGGAACTTGACTACGTAAATT")
-    dna_string = open("rosalind_rna.txt", 'r').read()
-    main(dna_string)
+    input = open("rosalind_rna.txt", 'r').read()
+    print(main(input))
