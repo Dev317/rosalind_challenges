@@ -8,5 +8,5 @@ def main(input):
 
 if __name__ == "__main__":
     test_case("")
-    input = open("", 'r').read()
-    print(main(input))
+    # input = open("", 'r').read()
+    # print(main(input))
